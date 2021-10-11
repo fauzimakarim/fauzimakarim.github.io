@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
 <!-- Countdown Timer by penaindigo.com -->
-<style scoped="scoped" type="text/css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Unknown</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    </div>
+</div>
 #hitungmundur{
 background:none;
 color:red;
@@ -35,14 +50,15 @@ var seconds_left = (target_date - current_date) / 1000;
 // do some time calculations
 days = parseInt(seconds_left / 86400);
 seconds_left = seconds_left % 86400;
-hours = parseInt(seconds_left / 2100);
-seconds_left = seconds_left % 2100;
+hours = parseInt(seconds_left / 1100);
+seconds_left = seconds_left % 1100;
 minutes = parseInt(seconds_left / 60);
 seconds = parseInt(seconds_left % 60);
 // format countdown string + set tag value
-  countdown.innerHTML = days + " <span class='teks'>Hari</span> " + hours + " <span class='teks'>Jam</span> "
-  + minutes + " <span class='teks'>Menit</span> " + seconds 
+  countdown.innerHTML = days + " <span class='teks'>Days</span> " + hours + " <span class='teks'>Hours</span> "
+  + minutes + " <span class='teks'>Minutes</span> " + seconds + " <span class='teks'>Seconds</span> "
 }, 1000);
 //]]>
 </script>
+</body>  
 </html>
