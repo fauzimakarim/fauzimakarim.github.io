@@ -22,7 +22,7 @@ color:black;
 <script type="text/javascript">
 //<![CDATA[
 // set the date we're counting down to
-var target_date = new Date("Jan 1, 2020").getTime();
+var target_date = new Date("Oct 31, 2021").getTime();
 // variables for time units
 var days, hours, minutes, seconds;
 // get tag element
@@ -41,7 +41,7 @@ minutes = parseInt(seconds_left / 60);
 seconds = parseInt(seconds_left % 60);
 // format countdown string + set tag value
   countdown.innerHTML = days + " <span class='teks'>Hari</span> " + hours + " <span class='teks'>Jam</span> "
-  + minutes + " <span class='teks'>Menit</span> " + seconds + " <span class='teks'>Detik<br/>Menuju Tahun</span> 2020";
+  + minutes + " <span class='teks'>Menit</span> " + seconds 
 }, 1000);
 //]]>
 </script>
