@@ -15,40 +15,38 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body class="loading">
-<div class="col-lg-8 mt-5 mx-auto">
-                    <div class="row">
-                    <div class="col-lg-3 col-6 text-center"  data-aos="fade-right" data-aos-delay="100">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="days">00</span></h4>
-                            <p class="m-0"><b>Days</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="200">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="hours">00</span></h4>
-                            <p class="m-0"><b>Hours</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="300">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="minutes">00</span></h4>
-                            <p class="m-0"><b>Minutes</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="400">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="seconds">00</span></h4>
-                            <p class="m-0"><b>Seconds</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Fauzi Makarim</h1>
+						<p>Programmer &nbsp;&bull;&nbsp; Inventor &nbsp;&bull;&nbsp; Developer</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/Fmakarim22" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/fauzi.makariim" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/fauzi-makarim-5837b5141/" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/fauzimakarim" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:fmakarim22@gmail.com?subject=Hello Fauzi!" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright"> Copyright &copy; 2021.</span>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
