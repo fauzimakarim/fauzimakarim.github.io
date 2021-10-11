@@ -1,73 +1,93 @@
-
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset=UTF-8>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="https://demo.datengdong.com/images/favicon.png" >
-    <link rel="canonical" href="https://demo.datengdong.com" >
-    <meta name=title content="Romeo &amp; Juliet Wedding" >
-    <meta name=author content="datengdong" >
-    <meta name=language content="Indonesia" >
-        <meta name=description content="Romeo &amp; Juliet are getting married on Sunday, 13 February 2022. Undangan pernikahan online by datengdong.com" >
-    <meta name=keywords content="datengdong,undangan,pernikahan,online,website,wedding,invitation">
-    <meta name=twitter:card content="summary" >
-    <meta name=twitter:site content="@datengdong" >
-    <meta name=twitter:creator content="@datengdong" >
-    <meta property="og:url" content="https://demo.datengdong.com" >
-    <meta property="og:title" content="Romeo &amp; Juliet Wedding" >
-    <meta property="og:description" content="Romeo &amp; Juliet are getting married on Sunday, 13 February 2022. Undangan pernikahan online by datengdong.com" >
-        <meta property="og:image" content="https://demo.datengdong.com/uploads/thumbs/gallery/1949d9111354e8962623050b26440179f5caddd0MS.jpg" >
-        <meta property="og:image:alt" content="Romeo &amp; Juliet Wedding Image" >
-    <title>Romeo &amp; Juliet Wedding</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/1.17.3/simplelightbox.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Quicksand:wght@500;600;700&family=Italianno&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link href="https://demo.datengdong.com/themes/twelve/style.css?v=1.0.1" rel="stylesheet">
-    <link rel="stylesheet" href="https://demo.datengdong.com/themes/style.css?v=1.2.1">
-</head>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
 <body>
 
-            
-                     <div class="col-lg-8 mt-5 mx-auto">
-                    <div class="row">
-                    <div class="col-lg-3 col-6 text-center"  data-aos="fade-right" data-aos-delay="100">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="days">00</span></h4>
-                            <p class="m-0"><b>Days</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="200">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="hours">00</span></h4>
-                            <p class="m-0"><b>Hours</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="300">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="minutes">00</span></h4>
-                            <p class="m-0"><b>Minutes</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6 text-center" data-aos="fade-right" data-aos-delay="400">
-                        <div class="card">
-                        <div class="card-body">
-                            <h4 class="timer"><span class="seconds">00</span></h4>
-                            <p class="m-0"><b>Seconds</b></p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
- 
-    </body>
+<div class="bgimg">
+  <div class="topleft">
+    <p>Unknown</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+<p id="demo"></p>
+  </div>
+  <div class="bottomleft">
+    <p>notfound</p>
+  </div>
+</div>
+<!-- Display the countdown timer in an element -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
 </html>
